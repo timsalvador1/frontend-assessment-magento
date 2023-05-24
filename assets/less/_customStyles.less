@@ -1,0 +1,152 @@
+/* Import the reset CSS */
+@import "_resetCss.less";
+
+/* Import the custom variables */
+@import "_variables.less";
+
+/* Utility classes for layout and spacing */
+.container {
+    max-width: @container-max-width;
+    padding-right: @container-padding;
+    padding-left: @container-padding;
+    margin-right: auto;
+    margin-left: auto;
+}
+.text-center {
+    text-align: center;
+}
+.mb-3 {
+    margin-bottom: 1rem;
+}
+.mb-4 {
+    margin-bottom: 2rem;
+}
+.mt-1 {
+    margin-top: 1rem;
+}
+.mt-2 {
+    margin-top: 2rem;
+}
+.padding-1 {
+    padding: 1rem;
+}
+  
+/* Main Banner */
+.banner {
+    position: relative;
+    overflow: hidden;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+     /* Main Banner Image */
+    &__image {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+     /* Main Banner Content */
+    &__content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: @text-color-primary;
+        width: 100%;
+        max-width: 100%;
+        padding: 0 @content-padding;
+    }
+     /* Main Banner Headline */
+    &__headline {
+        font-size: @headline-font-size;
+        margin-bottom: 0.75rem;
+    }
+    /* Main Banner Paragraph */
+    &__paragraph {
+        font-size: @paragraph-font-size;
+        letter-spacing: 0.07rem;;
+        font-weight: 500;
+    }
+}
+
+/* Grid Css */
+.grid {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: @grid-gap;
+    /* Grid Item */
+    .grid__item {
+        flex-basis: calc(100% / @grid-columns - @grid-gap);
+        border: 1px solid @grid-border-color;
+        padding: @grid-item-padding;
+        display: flex;
+        flex-direction: column;
+        border-radius: @grid-image-border-radius;
+        /* Grid Item Image */
+        .grid__image {
+            width: 100%;
+            height: auto;
+            border-radius: @grid-image-border-radius;
+        }
+        /* Grid Item Description */
+        .grid__description {
+            margin-top: 1.5rem;
+            color: @primary-color;
+            flex-grow: 1;
+            text-align: center;
+            line-height: 1.5;
+            font-size: 1.065rem;
+        }
+        /* Grid Item Btn */
+        .grid__button {
+            display: inline-block;
+            max-width: 120px;
+            padding: 12px 22px;
+            border: 2px solid @button-border-color;
+            border-radius: 20px;
+            color: @button-text-color;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 13px;
+            letter-spacing: 2px;
+            background: transparent;
+            font-weight: 600;
+            background: @button-bg-color;
+            margin: 14px auto 0;
+            text-align: center;
+            transition: all .2s;
+            -webkit-transition: all .2s;
+            -moz-transition: all .2s;
+            &:hover {
+                background-color: @primary-color;
+                color: @text-color-primary;
+            }
+        }
+    }
+}
+  
+/* Media queries for responsiveness */
+@media (max-width: 1399px) {
+    .container {
+        max-width: 1200px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .container {
+        max-width: 1440px;
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        max-width: 100%;
+    }
+    .grid {
+        flex-wrap: wrap;
+        justify-content: center;
+        .grid__item {
+            flex-basis: calc(100% - 2 * @grid-gap);
+        }
+    }
+}

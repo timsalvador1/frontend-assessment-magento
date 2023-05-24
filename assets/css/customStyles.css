@@ -1,0 +1,244 @@
+/* Import the reset CSS */
+/* Reset CSS */
+/* Remove default margins and paddings */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+/* Set default font family and font size */
+body {
+  line-height: 1;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  overflow-x: hidden;
+}
+/* Correct the block display for list elements */
+ol,
+ul {
+  list-style: none;
+}
+/* Correct the font size and margin on nested lists */
+ul ul,
+ol ol,
+ul ol,
+ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+/* Remove the padding on inline elements */
+a,
+span {
+  padding: 0;
+}
+/* Remove the border on images inside links */
+a img {
+  border: none;
+}
+/* Reset CSS ends */
+/* Import the custom variables */
+/* Custom Less variables */
+/* Utility classes for layout and spacing */
+.container {
+  max-width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.text-center {
+  text-align: center;
+}
+.mb-3 {
+  margin-bottom: 1rem;
+}
+.mb-4 {
+  margin-bottom: 2rem;
+}
+.mt-1 {
+  margin-top: 1rem;
+}
+.mt-2 {
+  margin-top: 2rem;
+}
+.padding-1 {
+  padding: 1rem;
+}
+/* Main Banner */
+.banner {
+  position: relative;
+  overflow: hidden;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  /* Main Banner Image */
+  /* Main Banner Content */
+  /* Main Banner Headline */
+  /* Main Banner Paragraph */
+}
+.banner__image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.banner__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #ffffff;
+  width: 100%;
+  max-width: 100%;
+  padding: 0 15px;
+}
+.banner__headline {
+  font-size: 3.75rem;
+  margin-bottom: 0.75rem;
+}
+.banner__paragraph {
+  font-size: 1.5rem;
+  letter-spacing: 0.07rem;
+  font-weight: 500;
+}
+/* Grid Css */
+.grid {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  gap: 35px;
+  /* Grid Item */
+}
+.grid .grid__item {
+  flex-basis: calc(100% / 3 - 35px);
+  border: 1px solid #dddddd;
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  /* Grid Item Image */
+  /* Grid Item Description */
+  /* Grid Item Btn */
+}
+.grid .grid__item .grid__image {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+.grid .grid__item .grid__description {
+  margin-top: 1.5rem;
+  color: #000000;
+  flex-grow: 1;
+  text-align: center;
+  line-height: 1.5;
+  font-size: 1.065rem;
+}
+.grid .grid__item .grid__button {
+  display: inline-block;
+  max-width: 120px;
+  padding: 12px 22px;
+  border: 2px solid #000000;
+  border-radius: 20px;
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  background: transparent;
+  margin: 14px auto 0;
+  text-align: center;
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+}
+.grid .grid__item .grid__button:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+/* Media queries for responsiveness */
+@media (max-width: 1399px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    max-width: 100%;
+  }
+  .grid {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .grid .grid__item {
+    flex-basis: calc(100% - 2 * 35px);
+  }
+}
