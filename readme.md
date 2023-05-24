@@ -1,14 +1,14 @@
 # Note:
-Please Run this Command to Install Node Modules
+Please run this command to install node modules.
 - npm install
 
 # Design
-- Implemented Pixel Perfect Design For Desktop & Mobile Using Your Provided Assets.
-- Used Less For CSS (As Magento 2 Use LESS for CSS)
-- Installed and Configured Grunt (JS Compiler for LESS/SCSS) to Compile Less Files Into CSS.
-- Configured Grunt Watch Task So LESS files immidately Compiled to CSS.
-- If You Want to See How Grunt is Actually Woring, You may Install this on Your Local Server/Machine.
-- Use Command - grunt watch / grunt to Run Compiler.
+- Implemented pixel perfect design for desktop and mobile using your provided assets
+- Used LESS for CSS (as Magento 2 uses LESS for CSS)
+- Installed and configured Grunt (a JavaScript compiler for LESS/SCSS) to compile LESS files into CSS
+- Configured Grunt watch task so LESS files are immediately compiled to CSS
+- If you want to see how Grunt is actually working, you may install this on your local server/machine
+- Use command - 'grunt watch' or 'grunt' to run the compiler
 
 # Followed These Coding Practices
 - Casing: kebab-case
