@@ -10,7 +10,7 @@ Please run this command to install node modules.
 - If you want to see how Grunt is actually working, you may install this on your local server/machine
 - Use command - 'grunt watch' or 'grunt' to run the compiler
 
-# Followed These Coding Practices
+# Followed these coding practices:
 - Casing: kebab-case
 - Use BEM syntax for custom CSS classes.
 - Use Bootstrap utility classes mainly for layout and spacing, (see the Layout and Utilities sections of the documentation).
